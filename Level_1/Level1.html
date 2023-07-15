@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Book Quiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Website Icon --><link rel="icon" href="https://rosesandthornsbookshome.files.wordpress.com/2019/04/harry-potter-houses.png">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Crimson+Text&family=Playfair+Display&display=swap" rel="stylesheet">
+    <!-- font awesome --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  </head>
+  <body>
+    <div class="header">
+      <img class="hogwartsLogo" src="../hogwards_logo.png" alt="">
+      <h1 class="mainHeading">Harry Potter Trivia</h1>
+    </div>
+    <div class="back">
+
+      <h1 class="title">Click on your Favourite Book</h1>
+      <div class="frame backdrop-blur-sm bg-black/30">
+        <img class="book1" src="images/book1.png" alt="Philosopher stone" onclick="getQuestion('book1')" />
+        <img class="book2" src="images/book2.png" alt="Chamber secret" onclick="getQuestion('book2')" />
+        <img class="book3" src="images/book3.png" alt="Prisioner of Azkaban" onclick="getQuestion('book3')" />
+        <img class="book4" src="images/book4.png" alt="Gobleet of Fire" onclick="getQuestion('book4')" />
+        <img class="book5" src="images/book5.png" alt="Order of Phoenix" onclick="getQuestion('book5')" />
+        <img class="book6" src="images/book6.png" alt="Half Blood Prince" onclick="getQuestion('book6')" />
+        <img class="book7" src="images/book7.png" alt="Deathly Hallows" onclick="getQuestion('book7')" />
+      </div>
+    </div>
+    <div class="pop-up">
+      <div class="pop-up-content">
+        <div class="part">
+          <h2 class="question-1"></h2>
+          <input type="radio" name="option_1" value="" required class="option_1-1" id="option_1-1">
+          <label class="options-1" for= "option_1-1"></label><br/>
+          <input type="radio" name="option_1" value="" required class="option_1-2" id="option_1-2">
+          <label class="options-2" for= "option_1-2"></label><br/>
+        </div>
+        <div class="part">
+          <h2 class="question-2"></h2>
+          <input type="radio" name="option_2" value="" required class="option_2-1" id="option_2-1">
+          <label class="options-3" for= "option_2-1"></label><br/>
+          <input type="radio" name="option_2" value="" required class="option_2-2" id="option_2-2">
+          <label class="options-4" for= "option_2-2"></label><br/>
+        </div>
+        <button type="button" class="done" onclick="calculate()" name="button">Done</button>
+      </div>
+    </div>
+    <div class="pop-up-2">
+      <div class="pop-up-2-content">
+        <h1>Score: </h1>
+        <button type="button"  onclick="window.location.href='../Level_2/level2.html'"class="done" name="button">Done</button>
+
+      </div>
+
+    </div>
+  </body>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script type="text/javascript" src="../index.js"></script>
+</html>

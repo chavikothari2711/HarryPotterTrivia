@@ -1,0 +1,276 @@
+html{
+  background: url('https://static1.colliderimages.com/wordpress/wp-content/uploads/2022/03/Hogwarts-Castle.jpg');
+}
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+*{
+  margin: 0px;
+  padding:0px;
+}
+body{
+  font-family: 'Playfair Display', serif;
+  margin:2rem!important;
+}
+.header{
+  display: flex;
+  gap:20px;
+  margin-bottom: 20px
+}
+.hogwartsLogo{
+  width: 6rem;
+  height:6rem;
+}
+.mainHeading{
+  font-weight:600;
+  font-size:3rem;
+  margin:auto 0px;
+  color:#996515 ;
+  font-family: 'Bonheur Royale', cursive;
+}
+.details{
+  height:50rem;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  text-align: center;
+  gap:30px;
+  border-radius:5px;
+}
+.welcomeMsg{
+  font-size:2rem;
+  font-weight: 400;
+  font-family: 'Crimson Text', serif;
+  color:#fff;
+}
+.details .knowMore{
+  display: flex;
+  flex-direction: column;
+  gap:5px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.details .knowMore input{
+  background: transparent;
+  border: 1px solid #996515 ;
+  color:#fff;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+.details .knowMore input::placeholder{
+  color:#fff;
+}
+.details .knowMore button{
+  width: fit-content;
+  color:#fff;
+  font-size: 1.2rem;
+  padding: 10px;
+  border: 2px solid #996515 ;
+  border-radius: 10px;
+}
+.details .knowMore button:hover{
+  background: #996515;
+}
+/* level1 */
+.title{
+  margin-top:20px;
+  font-size:1.8rem;
+  font-weight:800;
+}
+.frame{
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0px;
+  border: 1px solid #996515;
+  border-radius: 5px;
+  height:40rem;
+  display:flex;
+  flex-wrap: wrap;
+  gap:20px
+}
+.frame img{
+  height:15rem;
+  width:auto
+}
+.frame img:hover{
+  cursor:pointer;
+  transform: translateY(-25px);
+  box-shadow: 0px 15px 15px black;
+}
+.back{
+  display: block;
+}
+.pop-up,.pop-up-2,.pop-up-3{
+  display: none;
+  z-index: 10;
+  padding:20px;
+  margin-top:50px;
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  .pop-up-content,.pop-up-2-content,.pop-up-3-content {
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+    width:auto;
+    padding: 30px;
+    border: 1px solid #888;
+    border-radius: 5px;
+    width: 100%;
+  }
+  .pop-up-2-content h1{
+    font-size:2rem;
+    font-weight:500;
+  }
+  .done,.showAns,.home{
+    width:fit-content;
+    padding:10px;
+    border:1px solid #000;
+    background: #fff;
+    color:#000;
+    border-radius: 10px;
+  }
+  .done:hover,.showAns:hover,.home:hover{
+    background: #000;
+    color:#fff;
+  }
+
+  .part{
+    font-size: 1rem;
+    margin:10px;
+  }
+  /* level2 */
+  .down{
+    height:50rem;
+  }
+  .houses{
+    padding:10px;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+  }
+  .houses h1{
+    font-size: 1rem;
+    text-align: center;
+    color:#fff;
+  }
+  .house{
+    mix-blend-mode: lighten;
+    width:7rem;
+    cursor:pointer;
+  }
+  .Card{
+    border-radius:5px;
+    margin:40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Card-content{
+    padding:10px;
+    background:#fefefe;
+    width:90%;
+    border-radius:5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .Card-content h1{
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+  .Card-content input{
+    margin-top:10px;
+    font-size: 1.1rem;
+  }
+  .quiz{
+    margin-top:10px;
+    font-size: 1.2rem;
+    padding: 10px;
+    border:1px solid #000;
+    background: #fff;
+    color:#000;
+    border-radius: 10px;
+  }
+  .quiz:hover{
+    background: #000;
+    color:#fff;
+  }
+  .quiz i{
+    margin: 0px 10px;
+  }
+  .result{
+    margin-bottom: 15px;
+    font-family: 'Bonheur Royale', cursive;
+  }
+  /* level3 */
+  .level3{
+    height:40rem;
+    gap:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 10px;
+  }
+  .chooseHouse{
+    margin:5px;
+  }
+  .chooseHouse:hover{
+    transform: scale(1.2);
+    cursor: pointer
+  }
+  .part .question-1, .part .question-2{
+    font-size:1.3rem;
+    font-weight: 500;
+  }
+  .part .ans{
+    border-bottom: 1px solid black;
+    font-size:1.2rem;
+  }
+  .showAns{
+    float:right;
+  }
+table,th,td {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+}
+.right{
+  color:green;
+}
+.wrong{
+  color:red;
+}
+table{
+  margin:20px 0px;
+  font-weight: 300;
+}
+
+@media only screen and (max-width:600px) {
+  .mainHeading{
+    font-size:2rem;
+  }
+  .title{
+    font-size: 1.2rem;
+  }
+  .details,.level3{
+    height:30rem;
+  }
+  .Card{
+    margin:20px;
+  }
+  .Card-content h1{
+    font-size:1.2rem;
+  }
+  .frame img{
+    height:8.5rem;
+  }
+  .chooseHouse{
+      height: 9rem;
+  }
+}

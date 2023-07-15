@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sorting House</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Website Icon --><link rel="icon" href="https://rosesandthornsbookshome.files.wordpress.com/2019/04/harry-potter-houses.png">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Crimson+Text&family=Playfair+Display&display=swap" rel="stylesheet">
+    <!-- font awesome --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  </head>
+  <body>
+    <div class="header">
+      <img class="hogwartsLogo" src="../hogwards_logo.png" alt="">
+      <h1 class="mainHeading">Harry Potter Trivia</h1>
+    </div>
+    <div class="back">
+      <h1 class="title">Answer to Know Your House</h1>
+    <div class="down backdrop-blur-sm bg-black/30 ">
+      <div class="houses">
+        <div>
+          <a href="https://harrypotter.fandom.com/wiki/Gryffindor"><img class="house" src="https://cs.wellesley.edu/~cs110/labs/lab06/archive/lab4solution/images/Gryffindor.png" alt=""></a>
+          <h1>Gryffindoor</h1>
+        </div>
+        <div>
+          <a href="https://harrypotter.fandom.com/wiki/Hufflepuff"><img class="house" src="https://cs.wellesley.edu/~cs110/labs/lab06/archive/lab4solution/images/Hufflepuff.png" alt=""></a>
+          <h1>Hufflepuff</h1>
+        </div>
+        <div>
+          <a href="https://harrypotter.fandom.com/wiki/Ravenclaw"><img class="house" src="https://cs.wellesley.edu/~cs110/labs/lab06/archive/lab4solution/images/Ravenclaw.png" alt=""></a>
+          <h1>Ravenclaw</h1>
+        </div>
+        <div>
+          <a href="https://harrypotter.fandom.com/wiki/Slytherin"><img class="house" src="https://cs.wellesley.edu/~cs110/labs/lab06/archive/lab4solution/images/Slytherin.png" alt=""></a>
+          <h1>Slytherin</h1>
+        </div>
+      </div>
+      <div class="Card">
+        <div class="Card-content">
+          <h1 class="question">Q:1 There is a three-headed dog between you and your bestfriend, what do you do next?</h1>
+          <div class="optionsQuiz">
+            <input type="radio" class="option_1" name="option" value="Try to take on the dog myself, distracting it's view from my friend." required>
+            <label for="option_1">Try to take on the dog myself, distracting it's view from my friend.</label><br />
+            <input type="radio" class="option_2"name="option" value="I use my exceptional broom flying skills to zoom past the dog, leaving my friend in despair." required>
+            <label for="option_2">I use my exceptional broom flying skills to zoom past the dog, leaving my friend in despair.</label>
+          </div>
+          <button type="button" onclick="setQuestion()" class="quiz" name="button">Next<i class="fa-sharp fa-solid fa-forward"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="pop-up-2">
+      <div class="pop-up-2-content">
+        <h1 class="result">Your House is: </h1>
+        <button type="button"  onclick="window.location.href='../Level_3/level3.html'"class="done" name="button">Done</button>
+      </div>
+    </div>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>
