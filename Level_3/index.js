@@ -142,7 +142,7 @@ function showpopup(){
   $(".back").css("display","none");
 }
 function check(){
-  var answer = ($(".ans").val()).toLowerCase();
+  var answer = (($(".ans").val()).trim()).toLowerCase();
   enteredAnswer.push($(".ans").val())
   var ans = (cross[0][count-1].answer).toLowerCase();
   if(ans === answer){
