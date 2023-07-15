@@ -165,7 +165,7 @@ function showpopup2(){
 }
 function setans(){
   for(i=0;i<5;i++){
-    if(enteredAnswer[i] !== cross[0][i].answer){
+    if(((enteredAnswer[i]).trim()).toLowerCase() !== (cross[0][i].answer).toLowerCase()){
       $(".ans-"+(i+1)).addClass("wrong");
       $(".answer-"+(i+1)).addClass("wrong");
     }else{
